@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Netcompany" constructor="PCFMessageBar" version="0.0.1" display-name-key="PCFMessageBar" description-key="PCFMessageBar description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="message" display-name-key="Message_Display_Key" description-key="Message_Desc_Key" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="messageType" display-name-key="MessageType_Display_Key" description-key="MessageType_Desc" of-type="Enum" usage="input" required="true">
+      <value name="Info" display-name-key="Info_Key" description-key="Info_Desc">0</value>
+      <value name="Success" display-name-key="Success_Key" description-key="Success_Desc" default="true">4</value>
+      <value name="Warning" display-name-key="Warning_Key" description-key="Warning_Desc">5</value>
+      <value name="SevereWarning" display-name-key="SevereWarning_Key" description-key="SevereWarning_Desc">3</value>
+      <value name="Blocked" display-name-key="Blocked_Key" description-key="Blocked_Desc">2</value>
+      <value name="Error" display-name-key="Error_Key" description-key="Error_Desc">1</value>
+    </property>
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
