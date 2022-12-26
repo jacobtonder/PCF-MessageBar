@@ -1,4 +1,4 @@
-#PCFMessageBar
+# PCFMessageBar
 
 PCF Control to make show a MessageBar instead of a SingleLine.Text.
 
